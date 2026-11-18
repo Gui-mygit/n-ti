@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#050b0e">
+  <title>N体 · 让价值成为体验</title>
+  <meta name="description" content="N体是一条 AI 原生链路，用来搭建 N 维体验界面。DJI Osmo Action 6 是第一个验证样本。">
+  <meta property="og:title" content="N体 · 让价值成为体验">
+  <meta property="og:description" content="从产品数据到可进入的体验，再到购买与增长。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gui-mygit.github.io/n-ti/assets/img/overview-deep.webp">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="900">
+  <meta property="og:url" content="https://gui-mygit.github.io/n-ti/">
+  <meta property="og:site_name" content="N体">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://gui-mygit.github.io/n-ti/">
+  <link rel="icon" href="./assets/brand/n-ti-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/img/overview-deep.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="./css/roadshow.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-n" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="14.1" fill="none" stroke="currentColor" stroke-opacity=".34"/>
+      <path d="M9 23 23 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="9" cy="23" r="1.8" fill="currentColor"/>
+      <circle cx="23" cy="9" r="2.2" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M6.5 17.5 17.5 6.5M8.5 6.5h9v9"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3.5v17M5.5 14l6.5 6.5 6.5-6.5"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 9.5c2.5-2 4.5 2 7 0s4.5 2 7 0 2.8-.1 4 .9M3 15c2.5-2 4.5 2 7 0s4.5 2 7 0 2.8-.1 4 .9M3 20.2c2.5-2 4.5 2 7 0s4.5 2 7 0 2.8-.1 4 .9"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.6"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.4 5.4l1.4 1.4M17.2 17.2l1.4 1.4M18.6 5.4l-1.4 1.4M6.8 17.2l-1.4 1.4"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.8c3.2 4.3 6.2 7.3 6.2 10.4a6.2 6.2 0 0 1-12.4 0C5.8 10.1 8.8 7.1 12 2.8Z"/><path d="M8 14.2c1.3 1 2.4 1 3.8 0s2.5-1 3.8 0"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m2.8 19.2 5.3-8 3.2 4.4 3.4-5.8 6.5 9.4H2.8Z"/><path d="m8.1 11.2 1.8 1.2 1.4-1.2"/></symbol>
+    <symbol id="i-road" viewBox="0 0 24 24"><path d="M8.4 21 10 3M15.6 21 14 3M12 5.2v3M12 11.6v3M12 18v2.1"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2.8v18.4M4 7.4l16 9.2M20 7.4 4 16.6M8.8 4.2 12 7l3.2-2.8M8.8 19.8 12 17l3.2 2.8M3.4 10.4 4 14.5l-1.1 2M20.6 10.4 20 14.5l1.1 2"/></symbol>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a class="n-brand" href="#top" aria-label="N体首页">
+        <svg class="n-mark" aria-hidden="true"><use href="#i-n"></use></svg>
+        <span class="n-word"><b>N</b><span>体</span></span>
+      </a>
+      <nav class="nav-links" aria-label="页面章节">
+        <a class="nav-link" href="#premise" data-nav="premise">验证</a>
+        <a class="nav-link" href="#sample" data-nav="sample">样本</a>
+        <a class="nav-link" href="#engine" data-nav="engine">引擎</a>
+        <a class="nav-link" href="#vision" data-nav="vision">终局</a>
+      </nav>
+      <a class="nav-cta" href="https://gui-mygit.github.io/osmo-action-6-explorer/" target="_blank" rel="noopener">
+        <span>示例体验</span>
+        <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+      </a>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><i id="scrollProgress"></i></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-monogram" aria-hidden="true">
+        <svg viewBox="0 0 900 1150" preserveAspectRatio="xMidYMid slice">
+          <path d="M180 1000V150l540 850V150" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="180" cy="150" r="4" fill="currentColor"/>
+          <circle cx="720" cy="150" r="4" fill="currentColor"/>
+          <circle cx="180" cy="1000" r="4" fill="currentColor"/>
+          <circle cx="720" cy="1000" r="4" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--b" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="heroTitle">让价值，<br><span>成为体验。</span></h1>
+          <p class="hero-lede">N体是一条 AI 原生链路，用来搭建 N 维体验界面。它把产品数据转译为可感知、可操作的体验。<strong>DJI Osmo Action 6，是第一个样本。</strong></p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="https://gui-mygit.github.io/osmo-action-6-explorer/" target="_blank" rel="noopener">
+              进入示例体验
+              <svg aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--ghost" href="#engine">
+              看链路如何工作
+              <svg aria-hidden="true"><use href="#i-down"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-back" aria-hidden="true">
+            <img src="./assets/img/teardown-deep.webp" alt="" width="2160" height="1350">
+          </div>
+          <figure class="hero-sample">
+            <img src="./assets/img/overview-deep.webp" alt="DJI Osmo Action 6 的 3D 拆解体验示例界面" width="1440" height="900">
+            <span class="screen-corner screen-corner--tl" aria-hidden="true"></span>
+            <span class="screen-corner screen-corner--br" aria-hidden="true"></span>
+          </figure>
+          <p class="sample-caption">示例产品 / DJI Osmo Action 6</p>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#premise" aria-label="向下滚动">
+        <span></span>
+        <svg aria-hidden="true"><use href="#i-down"></use></svg>
+      </a>
+    </section>
+
+    <section class="chapter section--warm premise" id="premise" aria-labelledby="premiseTitle">
+      <div class="container">
+        <div class="premise-head">
+          <h2 id="premiseTitle" data-reveal>先验证一条链路，<br>再做一件作品。</h2>
+          <p data-reveal style="--delay:.08s">N体的第一性目标，不是生产一个 3D 页面，而是验证 AI 能否从产品数据出发，搭建可感知价值的 N 维体验界面。<strong>Osmo Action 6 是样本，不是终点。</strong></p>
+        </div>
+        <div class="premise-values" data-reveal style="--delay:.14s">
+          <div><span>样本</span><strong>DJI Osmo Action 6</strong></div>
+          <div><span>维度</span><strong>技术 × 场景</strong></div>
+          <div><span>产出</span><strong>可复用的体验链路</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter section--paper sample" id="sample" aria-labelledby="sampleTitle">
+      <div class="container">
+        <h2 id="sampleTitle" data-reveal>一台相机，<br>两个体验维度。</h2>
+
+        <div class="sample-grid">
+          <article class="tech-panel" data-reveal>
+            <div class="panel-label">技术体验</div>
+            <figure class="tech-frame">
+              <img src="./assets/img/teardown-deep.webp" alt="Osmo Action 6 的结构拆解界面，部件向四周展开" width="2160" height="1350" loading="lazy">
+              <span class="screen-corner screen-corner--tl" aria-hidden="true"></span>
+              <span class="screen-corner screen-corner--br" aria-hidden="true"></span>
+            </figure>
+            <div class="tech-points"><span>结构</span><span>光学</span><span>性能</span></div>
+          </article>
+
+          <article class="scene-panel" data-reveal style="--delay:.08s">
+            <div class="panel-label">场景体验</div>
+            <div class="scene-grid">
+              <a class="scene-card" href="https://gui-mygit.github.io/osmo-action-6-explorer/?theme=deep" target="_blank" rel="noopener" style="--scene-accent:#70e6ff" aria-label="进入深水场景">
+                <img src="./assets/img/pano-deep.webp" alt="" loading="lazy" width="1536" height="768">
+                <span class="scene-scrim" aria-hidden="true"></span>
+                <svg class="scene-icon" aria-hidden="true"><use href="#i-wave"></use></svg>
+                <span class="scene-name">深水</span>
+              </a>
+              <a class="scene-card" href="https://gui-mygit.github.io/osmo-action-6-explorer/?theme=daylight" target="_blank" rel="noopener" style="--scene-accent:#9fe9e2" aria-label="进入晴水场景">
+                <img src="./assets/img/pano-daylight.webp" alt="" loading="lazy" width="1536" height="768">
+                <span class="scene-scrim" aria-hidden="true"></span>
+                <svg class="scene-icon" aria-hidden="true"><use href="#i-sun"></use></svg>
+                <span class="scene-name">晴水</span>
+              </a>
+              <a class="scene-card" href="https://gui-mygit.github.io/osmo-action-6-explorer/?theme=dive" target="_blank" rel="noopener" style="--scene-accent:#5ce8ff" aria-label="进入深蓝场景">
+                <img src="./assets/img/pano-dive.webp" alt="" loading="lazy" width="1536" height="768">
+                <span class="scene-scrim" aria-hidden="true"></span>
+                <svg class="scene-icon" aria-hidden="true"><use href="#i-drop"></use></svg>
+                <span class="scene-name">深蓝</span>
+              </a>
+              <a class="scene-card" href="https://gui-mygit.github.io/osmo-action-6-explorer/?theme=trail" target="_blank" rel="noopener" style="--scene-accent:#b6dc9a" aria-label="进入山径场景">
+                <img src="./assets/img/pano-trail.webp" alt="" loading="lazy" width="1536" height="768">
+                <span class="scene-scrim" aria-hidden="true"></span>
+                <svg class="scene-icon" aria-hidden="true"><use href="#i-mountain"></use></svg>
+                <span class="scene-name">山径</span>
+              </a>
+              <a class="scene-card" href="https://gui-mygit.github.io/osmo-action-6-explorer/?theme=moto" target="_blank" rel="noopener" style="--scene-accent:#ffb36b" aria-label="进入公路场景">
+                <img src="./assets/img/pano-moto.webp" alt="" loading="lazy" width="1536" height="768">
+                <span class="scene-scrim" aria-hidden="true"></span>
+                <svg class="scene-icon" aria-hidden="true"><use href="#i-road"></use></svg>
+                <span class="scene-name">公路</span>
+              </a>
+              <a class="scene-card" href="https://gui-mygit.github.io/osmo-action-6-explorer/?theme=snow" target="_blank" rel="noopener" style="--scene-accent:#c8f3ff" aria-label="进入雪线场景">
+                <img src="./assets/img/pano-snow.webp" alt="" loading="lazy" width="1536" height="768">
+                <span class="scene-scrim" aria-hidden="true"></span>
+                <svg class="scene-icon" aria-hidden="true"><use href="#i-snow"></use></svg>
+                <span class="scene-name">雪线</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="sample-result" data-reveal>
+          <div>
+            <span class="result-label">感知链路</span>
+            <div class="result-chain"><strong>理解</strong><i>→</i><strong>代入</strong><i>→</i><strong>想要</strong></div>
+          </div>
+          <a class="result-link" href="https://gui-mygit.github.io/osmo-action-6-explorer/" target="_blank" rel="noopener">进入示例体验 <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter section--dark engine" id="engine" aria-labelledby="engineTitle">
+      <div class="container">
+        <div class="engine-head">
+          <h2 id="engineTitle" data-reveal>一条链路，<br>把数据变成体验。</h2>
+          <p data-reveal style="--delay:.08s">AI 与数据驱动，构成 N体链路引擎。</p>
+        </div>
+
+        <div class="engine-board" data-reveal>
+          <div class="engine-stack engine-stack--in">
+            <div class="engine-node">领域全量数据</div>
+            <span class="node-link" aria-hidden="true"></span>
+            <div class="engine-node">产品特征集</div>
+          </div>
+          <div class="engine-arrow" aria-hidden="true"></div>
+          <div class="engine-core">
+            <span class="core-orbit core-orbit--a" aria-hidden="true"></span>
+            <span class="core-orbit core-orbit--b" aria-hidden="true"></span>
+            <span class="core-title">N体<br>链路引擎</span>
+            <span class="core-pill core-pill--a">智能协作结构</span>
+            <span class="core-pill core-pill--b">大模型能力图谱</span>
+          </div>
+          <div class="engine-arrow" aria-hidden="true"></div>
+          <div class="engine-stack engine-stack--out">
+            <div class="engine-node">体验链路集</div>
+            <span class="node-link" aria-hidden="true"></span>
+            <div class="engine-node">交互终端</div>
+            <span class="node-link" aria-hidden="true"></span>
+            <div class="engine-node engine-node--accent">购买与增长</div>
+          </div>
+          <div class="engine-feedback"><span aria-hidden="true"></span>数据回流</div>
+        </div>
+
+        <p class="engine-note" data-reveal>数据定义产品，模型生成链路，终端承接体验。</p>
+      </div>
+    </section>
+
+    <section class="chapter section--warm vision" id="vision" aria-labelledby="visionTitle">
+      <div class="container">
+        <div class="vision-head">
+          <h2 id="visionTitle" data-reveal>一个样本之后，<br>是所有消费品。</h2>
+        </div>
+
+        <div class="vision-grid">
+          <div class="product-map" data-reveal aria-label="面向所有消费品的体验链路">
+            <div class="product-cell">耳机</div>
+            <a class="product-cell product-cell--sample" href="https://gui-mygit.github.io/osmo-action-6-explorer/" target="_blank" rel="noopener"><span>运动相机</span><small>样本</small></a>
+            <div class="product-cell">户外</div>
+            <div class="product-cell">家居</div>
+            <div class="product-cell product-cell--core">
+              <svg class="n-mark" aria-hidden="true"><use href="#i-n"></use></svg>
+              <strong>N体</strong>
+            </div>
+            <div class="product-cell">出行</div>
+            <div class="product-cell">美妆</div>
+            <div class="product-cell">食品</div>
+            <div class="product-cell">服务</div>
+          </div>
+
+          <div class="vision-copy" data-reveal style="--delay:.08s">
+            <p>同一套引擎，读取不同产品的特征，生成各自的体验链路集。用户不必想象产品，而是直接进入它。</p>
+            <p class="vision-statement">体验，<br>是增长的入口。</p>
+          </div>
+        </div>
+
+        <div class="conversion" data-reveal>
+          <span>沉浸体验</span><i>→</i><span>购买欲</span><i>→</i><span>商业转化</span><i>→</i><span>增长</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="enter" aria-labelledby="closingTitle">
+      <div class="closing-n" aria-hidden="true">N</div>
+      <div class="closing-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="closing-main">
+          <div class="closing-copy">
+            <h2 id="closingTitle" data-reveal>让每一次体验，<br>成为下一次增长。</h2>
+            <p data-reveal style="--delay:.08s">从一台运动相机开始，N体正在验证一条适用于所有消费品的体验链路。</p>
+            <div class="closing-actions" data-reveal style="--delay:.14s">
+              <a class="btn btn--primary" href="https://gui-mygit.github.io/osmo-action-6-explorer/" target="_blank" rel="noopener">进入示例体验 <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              <a class="btn btn--ghost" href="https://github.com/Gui-mygit/osmo-action-6-explorer" target="_blank" rel="noopener">查看示例源码 <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            </div>
+            <a class="closing-url" href="https://gui-mygit.github.io/osmo-action-6-explorer/" target="_blank" rel="noopener">gui-mygit.github.io/osmo-action-6-explorer</a>
+          </div>
+
+          <div class="qr-card" data-reveal style="--delay:.12s">
+            <img src="./assets/img/qr-live.png" alt="DJI Osmo Action 6 示例体验二维码" width="752" height="752" loading="lazy">
+            <div><span>示例体验</span><strong>DJI Osmo Action 6</strong></div>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <a class="n-brand n-brand--footer" href="#top" aria-label="回到顶部">
+            <svg class="n-mark" aria-hidden="true"><use href="#i-n"></use></svg>
+            <span class="n-word"><b>N</b><span>体</span></span>
+          </a>
+          <p>示例产品：DJI Osmo Action 6。独立概念验证，与 DJI 无关联。</p>
+          <span class="footer-year">2026</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/roadshow.js"></script>
+</body>
+</html>
